@@ -1,0 +1,324 @@
+// font-family: 'Abril Fatface', cursive;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Playfair Display', serif;
+
+body {
+    margin: 0px;
+}
+
+/* - - - - - LOGIN PAGE - - - - - */
+.login-background {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right,#FA496E, #faf1f5);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.login-page {
+    width: 45%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(5px);
+
+    h3 {
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 25px;
+        color: #fff;
+        margin: 4px 0 15px 0;
+    }
+    input {
+        padding: 7px;
+        margin-bottom: 10px;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        letter-spacing: 2px;
+        border: 0;
+        border-radius: 2px;
+        outline: none;
+    }
+    button {
+        padding: 10px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #f00255b5;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        -webkit-backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #f0025500;
+            color: #ab778b;
+            border: 1px solid #f00255b5;
+        }
+    }
+    .login-msg-btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #logInError {
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 13px;
+        margin: auto;
+    }
+    .login-form {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+}
+
+/* - - - - - START PAGE - - - - - */
+main {
+    display: flex;
+    height: 100%;
+}
+
+/* - - - - - ASIDE - - - - - */
+aside {
+    width: 20%;
+    height: 100vh;
+    border-right: 4px solid #ffffff;
+    text-align: center;
+    background-color: #FA496E;
+}
+.aside-profile {
+    width: 70%;
+    margin: 25px auto;
+
+    .fas {
+        color: #ff6c8c;
+        text-shadow: 0px 0px 1px #f2dfdf;
+    }
+    p {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 15px;
+        margin: 0px;
+        margin-top: 7px;
+    }
+}
+.aside-btn {
+    width: 60%;
+    border: 1px solid #ffffffc4;
+    box-shadow: 2px 2px 2px #00000012;
+    border-radius: 5px;
+    background-color: #ffffff67;
+    padding-bottom: 5px;
+    margin: 20px auto;
+    transition: all 0.2s ease;
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #fff;
+        margin: 2px;
+    }
+}
+.aside-btn:hover {
+    background-color: #ffffffac;
+    cursor: pointer;
+}
+.fas {
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* - - - - - START MAIN CONTENT - - - - - */
+.main-content {
+    width: 80%;
+    height: 100vh;
+    background-color: #fffefe;
+    
+    h2 {
+        text-align: center;
+        color: #F00254;
+        font-size: 30px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+.docs-container {
+    width: 90%;
+    margin: 10px auto;
+    z-index: 10;
+
+    h3 {
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color: #F0788D;
+        margin: 0px;
+        display: inline;
+    }
+}
+.doc-list {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fce1e4;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 0px 15px;
+    margin: 15px auto;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    h4 {
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: #3f3b3b;
+        user-select: none;
+    }
+    p {
+        font-family: 'Lato', sans-serif;
+        margin: auto 1px;
+        font-size: 13px;
+        color: #3f3b3bc0;
+    }
+    &:hover {
+        border: 2px solid #d84164;
+        background-color: #ffc7ce;
+    }
+    #docDate {
+        color: #d84164;
+    }
+    #docUserName {
+        letter-spacing: 1px;
+    }
+}
+
+/* - - - - - CREATE DOC PAGE - - - - - */
+.new-doc-container {
+    width: 90%;
+    height: 80%;
+    overflow: auto;
+    margin: 10px auto;
+    background-color: #fee7e9;
+    border-radius: 5px;
+    
+    h2 {
+        text-align: center;
+        color: #F00254;
+        font-size: 30px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    #newDocHeaderContainer {
+        display: flex;
+        justify-content: center;
+    }
+    #newDocHeaderInput{
+        width: 60%;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border: 1px solid #e65e8eac;
+        padding: 7px;
+        outline: 0;
+        margin-top: 15px;
+    }
+    button {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #fff;
+        border: 1px solid #e65e8eb3;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background-color: #f00255db;
+        padding: 7px;
+        margin-top: 15px;
+        transition: all 0.2s ease;
+    }
+    #newDocMsg {
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* - - - - - DEMO DOC PAGE - - - - - */
+#demoDate {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #000000a8;
+    text-align: center;
+    margin-top: -10px;
+}
+.demo-doc-container {
+    width: 90%;
+    height: 80%;
+    overflow: auto;
+    margin: 10px auto;
+    background-color: #feeff0;
+    border-radius: 5px;
+}
+#demoDocBtnBox {
+    display: flex;
+    justify-content: center;
+}
+#editDocBtn, #demoReturnBtn, #saveEditBtn, #deleteDocBtn {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 1px solid #e65e8eb3;
+    border-radius: 3px;
+    background-color: #f00255db;
+    padding: 7px;
+    margin-top: 15px;
+    margin-right: 5px;
+    transition: all 0.2s ease;
+}
+#demoTextContentBox, #textContentBox {
+    width: 95%;
+    height: 77%;
+    overflow: auto;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    box-shadow: 2px 2px 2px #00000012;
+}
+#demoTextContentP {
+    margin: 20px;
+}
+
+/* - - - - - EDIT DOCUMENT - - - - - */
+#editSavedMsg {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
